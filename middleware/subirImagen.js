@@ -1,4 +1,4 @@
-import multer from 'multer'
+import multer from 'multer' // npm i multer , para guardar imagenes en el servidor
 import path from 'path'
 import { generarId } from '../helpers/tokens.js'
  
@@ -7,7 +7,7 @@ const storage = multer.diskStorage({
         cb(null, './public/uploads/') // carpeta donde ira a cargar el archivo
     },
     filename: function(req, file, cb){
-        cb(null, generarId() + path.extname(file.originalname)) // nombre del archivo irrepetible
+        cb(null, generarId() + path.extname(file.originalname)) // nombre del archivo irrepetible a guardar
     }
 })
 

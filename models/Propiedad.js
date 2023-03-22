@@ -48,20 +48,7 @@ const Propiedad = db.define('propiedades', {
         type: DataTypes.BOOLEAN,
         allowNull: false,
         defaultValue: false
-    },
-    /* precioId: {
-        type: DataTypes.INTEGER,
-        allowNull: false
-    },
-    categoriaId: {
-        type: DataTypes.INTEGER,
-        allowNull: false
-    },
-    usuarioId: {
-        type: DataTypes.INTEGER,
-        allowNull: false
-    }, */
-
+    }
 
 });
 
